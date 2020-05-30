@@ -14,6 +14,10 @@ export interface UserLoginDTO extends UserDto {
   readonly password: string;
 }
 
-export interface UserRegisterDTO extends UserDto {
-  password: string;
+export class UserRegisterDTO implements UserDto {
+  email: string = "";
+  username: string = "";
+  firstName: string = "";
+  lastName: string = "";
+  password: string = "";
 }

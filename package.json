@@ -7,7 +7,7 @@
     "lib/**/*"
   ],
   "scripts": {
-    "compile": "tsc",
+    "compile": "rm -rf ./lib ; tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
