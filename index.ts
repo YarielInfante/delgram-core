@@ -21,3 +21,8 @@ export class UserRegisterDTO implements UserDto {
   lastName: string = "";
   password: string = "";
 }
+
+export interface TokenPayload {
+  token: string;
+  user: UserDto;
+}
